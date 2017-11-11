@@ -1,6 +1,6 @@
 import sha256 from 'crypto-js/sha256'
 import Hex from 'crypto-js/enc-hex'
-import { WordArray } from 'crypto-js/lib-typedarrays'
+import WordArray from 'crypto-js/lib-typedarrays'
 import merkle from 'merkle'
 
 const LEADING_MASKS = [

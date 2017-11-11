@@ -41,13 +41,13 @@ let Block = ({ block: { hash, items, nonce, previousHash }, ts }) => (
 
 Block = withProps(({ block: { ts } }) => ({
   ts: moment(ts),
-}))
+}))(Block)
 
 Block.propTypes = {
   block: PropTypes.shape({
     hash: PropTypes.string.isRequired,
     items: PropTypes.arrayOf(PropTypes.object).isRequired,
-    nonce: PropTypes.string.isRequired,
+    nonce: PropTypes.number.isRequired,
     previousHash: PropTypes.string,
     ts: PropTypes.number.isRequired,
   }).isRequired,

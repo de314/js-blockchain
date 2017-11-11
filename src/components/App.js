@@ -89,7 +89,6 @@ export default compose(
     },
     generateBlock: ({ items, setItems, blocks, setBlocks, difficulty, hash, setHash }) => () => {
       const proofOfWork = blockchain.getProofOfWork(items, hash, difficulty)
-      console.log({ proofOfWork })
       setHash(proofOfWork.hash)
       setItems([initBlock()])
       setBlocks([...blocks, proofOfWork])

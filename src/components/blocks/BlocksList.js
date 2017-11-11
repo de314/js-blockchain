@@ -10,7 +10,7 @@ const BlocksList = ({ blocks }) => {
 }
 
 BlocksList.propTypes = {
-  blocks: PropTypes.arrayOf(PropTypes.shape(Block.propTypes)).isRequired,
+  blocks: PropTypes.arrayOf(PropTypes.shape(Block.propTypes.block)).isRequired,
 }
 
 export default BlocksList

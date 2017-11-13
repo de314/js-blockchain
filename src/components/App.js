@@ -19,7 +19,12 @@ const App = ({
   generateBlock,
 }) => (
   <div className="App p3">
-    <h1>Testing</h1>
+    <h1>JS Blockchain</h1>
+    <p>
+      <a href="https://www.github.com/de314/js-blockchain">
+        View documentation.
+      </a>
+    </p>
     <div className="form-group mt2">
       <label>Difficulty</label>
       <Select
@@ -55,7 +60,10 @@ const App = ({
       </div>
     </div>
     <div className="mt2 mb3">
-      <button onClick={() => generateBlock()} className="btn btn-primary bg-green">
+      <button
+        onClick={() => generateBlock()}
+        className="btn btn-primary bg-green"
+      >
         Generate Next Block
       </button>
     </div>
@@ -87,7 +95,15 @@ export default compose(
       setMessage('')
       setItems([...items, payload])
     },
-    generateBlock: ({ items, setItems, blocks, setBlocks, difficulty, hash, setHash }) => () => {
+    generateBlock: ({
+      items,
+      setItems,
+      blocks,
+      setBlocks,
+      difficulty,
+      hash,
+      setHash,
+    }) => () => {
       const proofOfWork = blockchain.getProofOfWork(items, hash, difficulty)
       setHash(proofOfWork.hash)
       setItems([initBlock()])

@@ -11,10 +11,10 @@ The page will be available at http://localhost:3000 or view the [demo](https://d
 Most people think of the Bitcoin (BTC) blockchain. At a high level the BTC blockchain
 is made up of `blocks`, `hashes`, and `transactions`.
 
-* *Hash:* a number that represents another piece of information. See [SHA256](https://en.wikipedia.org/wiki/SHA-2).
-* *Transaction:* In the BTC blockchain this is the transfer of digital currency between
+* **Hash:** a number that represents another piece of information. See [SHA256](https://en.wikipedia.org/wiki/SHA-2).
+* **Transaction:** In the BTC blockchain this is the transfer of digital currency between
 two users. In a more general blockchain it can be any type of data.
-* *Block:* A group of transactions that has been cryptographically signed.
+* **Block:** A group of transactions that has been cryptographically signed.
 
 A blockchain node will keep track of all "valid uncommitted" transactions. Each
 transaction is hashed into a [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree); the Merkle Tree outputs a
@@ -42,13 +42,13 @@ until we get lucky and find one at random. The BTC blockchain difficulty has bee
 increasing because more and more nodes are joining the cluster. That means that
 there are more random guessing per second, and therefore one of the machines is
 more likely to find the correct nonce. So we just have to increase the difficulty
-by selecting a smaller target or max value for valid blockHashes.
+by selecting a smaller target value for valid blockHashes.
 
 # What is happening?
 
-This demo allows you to enter messages. These messages are supplied an ID and
-timestamp and stored in a JSON object. Just type a message in the text box and press
-[ENTER].
+Instead of transactions, this demo allows you to enter text messages. These messages
+are supplied an ID and timestamp and stored in a JSON object. Just type a message
+in the text box and press `[ENTER]`.
 
 You can then generate a new block by clicking the button. This will kick off a process
 that will attempt to generate a new block hash.
@@ -67,4 +67,4 @@ took 22 attempts to find a valid blockHash based on the current difficulty.
 
 * ReactJS via [Create React App](https://github.com/facebookincubator/create-react-app)
 * [BassCSS@7.1.1](http://basscss.com/v7/docs/base-forms/)
-*
+* Everything else [package.json](https://github.com/de314/js-blockchain/blob/master/package.json)

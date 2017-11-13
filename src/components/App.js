@@ -21,9 +21,7 @@ const App = ({
   <div className="App p3">
     <h1>JS Blockchain</h1>
     <p>
-      <a href="https://www.github.com/de314/js-blockchain">
-        View documentation.
-      </a>
+      <a href="https://github.com/de314/js-blockchain">View documentation.</a>
     </p>
     <div className="form-group mt2">
       <label>Difficulty</label>

@@ -8,6 +8,9 @@ The page will be available at http://localhost:3000 or view the [demo](https://d
 
 # Intro - How the blockchain works
 
+I will attempt to do it justice, but you should read the [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf)
+if you want a deeper understanding.
+
 Most people think of the Bitcoin (BTC) blockchain. At a high level the BTC blockchain
 is made up of `blocks`, `hashes`, and `transactions`.
 
